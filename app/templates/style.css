@@ -1,0 +1,169 @@
+<style>
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+p {
+    font-family: 'Poppins', sans-serif;
+    /* font-size: 1.1em; */
+    font-weight: 300;
+    line-height: 1.7em;
+}
+
+line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+body {
+    margin-top:-40px;
+    padding-top:40px;
+    data-offset: "140";
+}
+
+/* ---------------------------------------------------
+    EXPERIMENT
+----------------------#------------------------------- */
+
+
+#contact {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+/* ---------------------------------------------------
+    NAVBAR STYLE
+----------------------------------------------------- */
+
+#navbarNavDropdown {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: right;
+}
+
+#navbarNavDropdown a.active {
+  text-align: right;
+  font-weight: bold;
+  font-size: 24px;
+  color: #bbd2f7;
+}
+
+/* ---------------------------------------------------
+    ** SIDEBAR STYLE **a
+----------------------------------------------------- */
+.fixed {
+    position: fixed;
+}
+
+/* sidebar */
+.bs-docs-sidebar {
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* all links */
+.bs-docs-sidebar .nav>li>a {
+    color: #999;
+    border-left: 2px solid transparent;
+    padding: 4px 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* nested links */
+.bs-docs-sidebar .nav .nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+}
+
+/* active & hover links */
+.bs-docs-sidebar .nav>.active>a,
+.bs-docs-sidebar .nav>li>a:hover,
+.bs-docs-sidebar .nav>li>a:focus {
+    color: #563d7c;
+    text-decoration: none;
+    background-color: transparent;
+    border-left-color: #563d7c;
+}
+/* all active links */
+.bs-docs-sidebar .nav>.active>a,
+.bs-docs-sidebar .nav>.active:hover>a,
+.bs-docs-sidebar .nav>.active:focus>a {
+    font-weight: 700;
+}
+/* nested active links */
+.bs-docs-sidebar .nav .nav>.active>a,
+.bs-docs-sidebar .nav .nav>.active:hover>a,
+.bs-docs-sidebar .nav .nav>.active:focus>a {
+    font-weight: 500;
+}
+
+/* hide inactive nested list */
+.bs-docs-sidebar .nav ul.nav {
+    display: none;
+}
+/* show active nested list */
+.bs-docs-sidebar .nav>.active>ul.nav {
+    display: block;
+}
+
+
+/* ---------------------------------------------------
+    ** END OF SIDEBAR STYLE **a
+----------------------------------------------------- */
+
+
+#main {
+  padding-top:50px;
+}
+#mission_statement {
+  font-size:20px;
+  font-weight:bold;
+}
+
+
+#name {
+  font-size:50px;
+}
+
+#navbar {
+
+}
+#programs_and_tools{
+  font-size:50
+}
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+}
+
+
+</style>
