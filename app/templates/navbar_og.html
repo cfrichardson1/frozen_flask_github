@@ -1,0 +1,90 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	{% if request.path == '/index.html' %}
+	<a class="navbar-brand" href="#"><strong>Welcome to the Homepage</strong></a>
+
+{% elif request.path == '/city_data.html' %}
+	<a class="navbar-brand" href="#"><strong>City Data</strong></a>
+
+{% elif request.path == '/cloudiness.html' %}
+	<a class="navbar-brand" href="#"><strong>Cloudiness VS Latitude</strong></a>
+
+{% elif request.path == '/humidity.html' %}
+	<a class="navbar-brand" href="#"><strong>Humidity VS Latitude</strong></a>
+
+{% elif request.path == '/temperature.html' %}
+	<a class="navbar-brand" href="#"><strong>Temperature VS Latitude</strong></a>
+
+{% else %}
+	<a class="navbar-brand" href="#"><strong><img src="/static/cfr_logo3.png" class="img-fluid" width = '50px' alt = 'logo'></strong></a>
+
+
+{% endif %}
+
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+					<a class="nav-link" href="/">Home</a>
+				</li>
+
+
+
+				<!-- Personal Website Dropdown -->
+				<li class="nav-item dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Personal Sites<span class="caret"></span></a>
+
+          <ul class="dropdown-menu" role="menu">
+            <li><a class="dropdown-item" href="https://www.linkedin.com/in/cfrichardson">
+								<i class="fab fa-linkedin"></i>  LinkedIn</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="https://github.com/cfrichardson1">
+								<strong>
+									<i class="fab fa-github"></i> Github Repo
+								</strong>
+							</a>
+						</li>
+            <li class="divider"></li>
+            <li><a href="www.zentuning.com">Zen Tuning</a></li>
+          </ul>
+        </li>
+				<!-- END Personal Website Dropdown -->
+
+				<!-- Personal Website Dropdown -->
+				<li class="nav-item dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Portfolio<span class="caret"></span></a>
+
+          <ul class="dropdown-menu" role="menu">
+            <li>
+								<a class="dropdown-item" href="https://cfrichardson1.github.io/Weather_EDA_Flask_App/"><strong>
+									<center>Weather Data Engineering & EDA<br> w/ Python</center></strong></a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="https://cfrichardson1.github.io/lotto_eda/">
+		            <strong><center>Cali Lotto Data Engineering & EDA <br>w/ R</center></strong>
+		          </a>
+						</li>
+            <li class="divider"></li>
+            <li>
+							<a class="dropdown-item" href="/old_gui_landing">
+								<strong>
+									<center>Previous Website Interface</center>
+								</strong>
+							</a>
+
+						</li>
+          </ul>
+        </li>
+				<!-- END Portfolio Dropdown -->
+
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </nav>

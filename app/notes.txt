@@ -1,3 +1,0 @@
-implementation of volunteer section on homepage
-
-develop content drill down through GA

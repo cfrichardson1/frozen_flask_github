@@ -1,169 +1,211 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+  body {
+    position: relative;
+    font-size: 17px;
+    padding-bottom: 18px;
+  }
 
+  #builtwith {
+    font-size: 20;
+    font-weight: bold;
+    align-items: center;
+    padding-left: 110px;
+  }
 
-p {
-    font-family: 'Poppins', sans-serif;
-    /* font-size: 1.1em; */
-    font-weight: 300;
-    line-height: 1.7em;
-}
-
-line {
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px dashed #ddd;
-    margin: 40px 0;
-}
-
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-body {
-    margin-top:-40px;
-    padding-top:40px;
-    data-offset: "140";
-}
-
-/* ---------------------------------------------------
-    EXPERIMENT
-----------------------#------------------------------- */
-
-
-#contact {
-  padding-top: 100px;
-  padding-bottom: 120px;
-}
-/* ---------------------------------------------------
-    NAVBAR STYLE
------------------------------------------------------ */
-
-#navbarNavDropdown {
-  font-weight: bold;
-  font-size: 20px;
-  text-align: right;
-}
-
-#navbarNavDropdown a.active {
-  text-align: right;
-  font-weight: bold;
-  font-size: 24px;
-  color: #bbd2f7;
-}
-
-/* ---------------------------------------------------
-    ** SIDEBAR STYLE **a
------------------------------------------------------ */
-.fixed {
-    position: fixed;
-}
-
-/* sidebar */
-.bs-docs-sidebar {
+  .col-1 {
+    font-size: 18px;
+    font-weight: bold;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 140px;
+    padding-right: 0px;
+  }
+  .col-6 {
     padding-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+  }
+  .col-md-11 {
+    padding-left: 30px
+  }
 
-/* all links */
-.bs-docs-sidebar .nav>li>a {
-    color: #999;
-    border-left: 2px solid transparent;
-    padding: 4px 20px;
-    font-size: 13px;
-    font-weight: 400;
-}
-
-/* nested links */
-.bs-docs-sidebar .nav .nav>li>a {
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 30px;
-    font-size: 12px;
-}
-
-/* active & hover links */
-.bs-docs-sidebar .nav>.active>a,
-.bs-docs-sidebar .nav>li>a:hover,
-.bs-docs-sidebar .nav>li>a:focus {
-    color: #563d7c;
-    text-decoration: none;
-    background-color: transparent;
-    border-left-color: #563d7c;
-}
-/* all active links */
-.bs-docs-sidebar .nav>.active>a,
-.bs-docs-sidebar .nav>.active:hover>a,
-.bs-docs-sidebar .nav>.active:focus>a {
-    font-weight: 700;
-}
-/* nested active links */
-.bs-docs-sidebar .nav .nav>.active>a,
-.bs-docs-sidebar .nav .nav>.active:hover>a,
-.bs-docs-sidebar .nav .nav>.active:focus>a {
-    font-weight: 500;
-}
-
-/* hide inactive nested list */
-.bs-docs-sidebar .nav ul.nav {
-    display: none;
-}
-/* show active nested list */
-.bs-docs-sidebar .nav>.active>ul.nav {
-    display: block;
-}
+  hr {
+      border: none;
+      height: 1px;
+      background-color: #333; /* Modern Browsers */
+  }
 
 
-/* ---------------------------------------------------
-    ** END OF SIDEBAR STYLE **a
------------------------------------------------------ */
+  .name {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Arial Black", Gadget, sans-serif;
+
+  }
+
+  div.row {
+    padding-top: 18px;
+  }
+
+  li.job_bullets {
+    font-size: 17px;
+  }
+
+  #main_content {
+    padding-top: 50px;
+  }
+
+  p.card-text {
+    font-size: 17px;
+  }
+
+  p.content, li.bullets{
+    font-size: 19px;
+  }
+
+  /* Dummy Sections */
+  p.dummy {
+    height: 40px;
+  }
+
+  p.job_title {
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 0px;
+  }
+
+  p.ruling_divider {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 40px;
+    weight: bold;
+    /* text-align: center; */
+  }
+
+  p.strong {
+    font-size: 22px;
+    font-weight: bold;
+  }
 
 
-#main {
-  padding-top:50px;
-}
-#mission_statement {
-  font-size:20px;
-  font-weight:bold;
-}
+
+  h2 {
+    font-family: 'Impact', Charcoal, sans-serif;
+  }
+  h3 {
+    font-family: '"Trebuchet MS', Charcoal, sans-serif;
+  }
+
+  .subheading mb-3 {
+    padding-top: 0;
+  }
+
+  #contact_card {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 
 
-#name {
-  font-size:50px;
-}
-
-#navbar {
-
-}
-#programs_and_tools{
-  font-size:50
-}
+  .card-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
 
 
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ */
-#content {
-    padding: 20px;
-    min-height: 100vh;
-    transition: all 0.3s;
-}
+  /* ------------------------------------------------ */
+    /* NAVBAR */
+  /* ------------------------------------------------ */
+
+    a.nav-link {
+      font-weight: bold;
+      color: white;
+    }
+
+    a.nav-color {
+      font-weight: bold;
+    }
+
+    a.dropdown-bullet {
+      font-size: 20px;
+      padding-left: 10px;
+
+    }
+
+    a.dropdown-item {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    a.dropdown-toggle {
+      color: white;
+      font-weight: bold;
+      font-size: 19px;
+      font-style: 'New Century Schoolbook', TeX Gyre Schola, serif;
+    }
+
+    #header {
+      font-size: 20px;
+      text-align: center;
+      text-decoration: underline overline;
+    }
+/*
+    #right_dropdown {
+      left: 30px;
+    } */
+
+    }
+
+    #nav_buttons {
+      padding-right: 50px;
+    }
 
 
-/* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
-
-@media (max-width: 768px) {
-
-}
+  /* ------------------------------------------------ */
+  /* NAVBAR END */
+  /* ------------------------------------------------ */
 
 
-</style>
+/* ------------------------------------------------ */
+  /* SIDEBAR */
+/* ------------------------------------------------ */
+
+  #myScrollspy {
+    padding-left: 5px;
+    top: 300px;
+    z-index: 9999 !important;
+  }
+
+  ul.nav-pills {
+    position: fixed;
+  }
+
+  a.main_bullit {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+  }
+
+  a.sub_bullit {
+    margin-left: 30px;
+    font-size: 15px;
+    color: black;
+
+  }
+
+/* ------------------------------------------------ */
+  /* SIDEBAR END */
+/* ------------------------------------------------ */
+
+
+
+  @media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section41, #section42  {
+      margin-left: 150px;
+    }
+  }
+
+
+
+
+  </style>

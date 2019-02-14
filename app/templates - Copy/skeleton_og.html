@@ -8,6 +8,7 @@
   {% include 'scripts&links.html' %}
 
 
+
 </head>
 
 <!-- Body -->
@@ -16,20 +17,16 @@
 <!-- Navbar -->
 {% include 'navbar.html' %}
 
-<div class="container-fluid">
+  <div class="container">
+    <div class="row">
 
-<div class="container-fluid">
+      {% include 'homepage_exp.html' %}
+    </div>
+  </div>
+  {% include 'contact.html' %}
 
-<div class="row">
-
-  {% block Content %}{% endblock %}
-
-</div>
-{% include 'contact.html' %}
 
 </body>
-
-</div>
 
 </div>
 

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Full Page Ex</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <!-- Font Awesome JS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <!--  css -->
+  <style>
+    body {
+      position: relative;
+    }
+    ul.nav-pills {
+      top: 20px;
+      position: fixed;
+    }
+    div.col-8 div {
+      height: 500px;
+    }
+    </style>
+  <body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-sm-3 col-4" id="myScrollspy">
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="#section1">Section 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">Section 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">Section 3</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Section 4</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#section41">Link 1</a>
+              <a class="dropdown-item" href="#section42">Link 2</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="col-sm-9 col-8">
+        <div id="section1" class="bg-success">
+          <h1>Section 1</h1>
+          <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+        </div>
+        <div id="section2" class="bg-warning">
+          <h1>Section 2</h1>
+          <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+        </div>
+        <div id="section3" class="bg-secondary">
+          <h1>Section 3</h1>
+          <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+        </div>
+        <div id="section41" class="bg-danger">
+          <h1>Section 4-1</h1>
+          <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+        </div>
+        <div id="section42" class="bg-info">
+          <h1>Section 4-2</h1>
+          <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+
+  <!-- Bootstrap JS -->
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>

@@ -1,83 +1,71 @@
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" id= 'navbar'>
-	{% if request.path == '/index.html' %}
-		<a class="navbar-brand" href="#"><strong>Welcome to the Homepage</strong></a>
+<nav class="navbar fixed-top navbar-expand-lg bg-dark">
+	<a class="navbar-brand" href="#"><strong><img src="/static/cfr_logo3.png" class="img-fluid" width = '50px' alt = 'logo'></strong></a>
 
-	{% elif request.path == '/city_data.html' %}
-		<a class="navbar-brand" href="#"><strong>City Data</strong></a>
 
-	{% elif request.path == '/cloudiness.html' %}
-		<a class="navbar-brand" href="#"><strong>Cloudiness VS Latitude</strong></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-	{% elif request.path == '/humidity.html' %}
-		<a class="navbar-brand" href="#"><strong>Humidity VS Latitude</strong></a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul id = 'nav_buttons' class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="#">Interests</a>
+      </li> -->
 
-	{% elif request.path == '/temperature.html' %}
-		<a class="navbar-brand" href="#"><strong>Temperature VS Latitude</strong></a>
+			<!-- Personal Website Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Personal Sites
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+														<a id = 'header' class="dropdown-item" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Background &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
 
-	{% else %}
-		<a class="navbar-brand" href="#"><strong><img src="/static/cfr_logo3.png" class="img-fluid" width = '50px' alt = 'logo'></strong></a>
-
-	{% endif %}
-
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"
-		></span>
-	</button>
-
-	<div id="navbarNavDropdown" class="navbar-collapse collapse mr-auto">
-		<ul class="navbar-nav mr-auto">
-		</ul>
-		<ul class="navbar-nav">
-
-			<li class="nav-item">
-				<a class="nav-link" href="/"><strong>Home</strong></a>
-			</li>
-
-      <!-- Personal Website Dropdown -->
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Personal Sites</strong>
-				</a>
-
-				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-					<a class="dropdown-item" href="https://www.linkedin.com/in/cfrichardson"><strong><i class="fab fa-linkedin"></i>  LinkedIn</strong></a>
-
+					<a class="dropdown-item" href="https://www.linkedin.com/in/cfrichardson">
+						<i class="fab fa-linkedin"></i>  LinkedIn
+					</a>
 					<a class="dropdown-item" href="https://github.com/cfrichardson1">
-            <strong><i class="fab fa-github"></i> Github Repo</strong>
-          </a>
-				</div>
-			</li>
+						<i class="fab fa-github"></i> Github Repo
+					</a>
+					<a id = 'header' class="dropdown-item" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Working Sites &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+						<a class="dropdown-item" href="https://www.zentuning.com">Zen Tuning</a>
+						<a class="dropdown-item" href="https://www.circuitsyndicate.com">Circuit Syndicate</a>
+
+		      </div>
+      </li>
 			<!-- END Personal Website Dropdown -->
 
-			<!-- Portfolio Dropdown -->
+			<!-- Projects & EDAs Dropdown -->
+			<li id = 'right_dropdown' class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Projects
+        </a>
+        <div id = 'right_dropdown' class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a id = 'header' class="dropdown-item" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp EDAs &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
 
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><strong>Projects</strong>
-				</a>
-
-				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-					<a class="dropdown-item" href="https://cfrichardson1.github.io/Weather_EDA_Flask_App/"><strong><center>Weather Data Engineering & EDA<br> w/ Python</strong></center></a>
-
-					<a class="dropdown-item" href="https://cfrichardson1.github.io/lotto_eda/">
-            <strong><center>Cali Lotto Data Engineering & EDA <br>w/ R</center></strong>
-          </a>
-
-					<a class="dropdown-item" href="/old_gui_landing">
-						<strong><center>Previous Website Gui</center></strong>
+					<a class="dropdown-item" href="https://cfrichardson1.github.io/Weather_EDA_Flask_App/">
+						Weather EDA &<br> Data Engineering
 					</a>
-				</div>
-			</li>
-			<!-- END Portfolio Dropdown -->
+					<a class="dropdown-item" href="https://cfrichardson1.github.io/lotto_eda/">
+Cali Lotto Data <br>Engineering & EDA</a>
+					<a id = 'header' class="dropdown-item" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Reports &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+
+					<a class="dropdown-item" href="#/">
+						future
+					</a>
+
+				 </div>
+      </li>
 
 			<li class="nav-item">
-				<a class="nav-link" href="/interests.html"><strong>Interest</strong></a>
+				<a class="nav-link" href="#">Future Interests Page</a>
 			</li>
 
-			<li class="nav-item">
-				<a class="nav-link" href="city_data.html"><strong>Contact</strong></a>
-			</li>
+    </ul>
+		<!-- END Portfolio Dropdown -->
 
-		</ul>
-	</div>
+
+  </div>
 </nav>
