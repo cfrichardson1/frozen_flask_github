@@ -15,6 +15,10 @@
   gtag('config', 'UA-128761026-1');
 </script>
 
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 <!-- Bootstrap CSS CDN -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
@@ -26,30 +30,25 @@
 <style>
   body {
     position: relative;
-    font-size: 17px;
-    padding-bottom: 18px;
+    font-size: 14px;
+    padding-bottom: 15px;
   }
 
   #builtwith {
-    font-size: 20;
+    font-size: 14px;
     font-weight: bold;
     align-items: center;
     padding-left: 110px;
   }
 
-  .col-1 {
-    font-size: 18px;
-    font-weight: bold;
-    align-items: center;
-    padding-top: 40px;
-    padding-left: 140px;
-    padding-right: 0px;
-  }
+
   .col-6 {
     padding-left: 20px;
   }
+
+
   .col-md-11 {
-    padding-left: 30px
+    padding-left: 40px
   }
 
   hr {
@@ -60,18 +59,19 @@
 
 
   .name {
-    font-size: 40px;
+    font-size: 34px;
     font-weight: bold;
     font-family: "Arial Black", Gadget, sans-serif;
 
   }
 
+  /* For Padding */
   div.row {
     padding-top: 18px;
   }
 
   li.job_bullets {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   #main_content {
@@ -79,33 +79,33 @@
   }
 
   p.card-text {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   p.content, li.bullets{
-    font-size: 19px;
+    font-size: 13px;
   }
 
-  /* Dummy Sections */
+  /* Dummy Sections for padding purposes as well as HTML targets */
   p.dummy {
     height: 40px;
   }
 
   p.job_title {
-    font-size: 22px;
+    font-size: 16px;
     font-weight: bold;
     padding-bottom: 0px;
   }
 
-  p.ruling_divider {
+  p.experience {
     font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     weight: bold;
     /* text-align: center; */
   }
 
   p.strong {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
   }
 
@@ -130,7 +130,7 @@
 
   .card-title {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
   }
 
@@ -148,26 +148,21 @@
       font-weight: bold;
     }
 
-    a.dropdown-bullet {
-      font-size: 20px;
-      padding-left: 10px;
-
-    }
 
     a.dropdown-item {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
     }
 
     a.dropdown-toggle {
       color: white;
       font-weight: bold;
-      font-size: 19px;
+      font-size: 17px;
       font-style: 'New Century Schoolbook', TeX Gyre Schola, serif;
     }
 
-    #header {
-      font-size: 20px;
+    #navbar {
+      font-size: 19px;
       text-align: center;
       text-decoration: underline overline;
     }
@@ -202,15 +197,21 @@
     position: fixed;
   }
 
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #2c2d2d;
+}
+
   a.main_bullit {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 17px;
     color: black;
   }
 
   a.sub_bullit {
     margin-left: 30px;
-    font-size: 15px;
+    font-size: 12px;
     color: black;
 
   }
@@ -265,7 +266,7 @@
           Personal Sites
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-														<a id = 'header' class="dropdown-item" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Background &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+					<a id = 'navbar' class="dropdown-item" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Background &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
 
 					<a class="dropdown-item" href="https://www.linkedin.com/in/cfrichardson">
 						<i class="fab fa-linkedin"></i>  LinkedIn
@@ -273,7 +274,7 @@
 					<a class="dropdown-item" href="https://github.com/cfrichardson1">
 						<i class="fab fa-github"></i> Github Repo
 					</a>
-					<a id = 'header' class="dropdown-item" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Working Sites &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+					<a id = 'navbar' class="dropdown-item" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Working Sites &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
 						<a class="dropdown-item" href="https://www.zentuning.com">Zen Tuning</a>
 						<a class="dropdown-item" href="https://www.circuitsyndicate.com">Circuit Syndicate</a>
 
@@ -287,17 +288,17 @@
           Projects
         </a>
         <div id = 'right_dropdown' class="dropdown-menu" aria-labelledby="navbarDropdown">
-					<a id = 'header' class="dropdown-item" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp EDAs &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+					<a id = 'navbar' class="dropdown-item" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp EDAs &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
 
 					<a class="dropdown-item" href="https://cfrichardson1.github.io/Weather_EDA_Flask_App/">
 						Weather EDA &<br> Data Engineering
 					</a>
 					<a class="dropdown-item" href="https://cfrichardson1.github.io/lotto_eda/">
 Cali Lotto Data <br>Engineering & EDA</a>
-					<a id = 'header' class="dropdown-item" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Reports &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+					<a id = 'navbar' class="dropdown-item" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp R/Shiny Based App &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
 
-					<a class="dropdown-item" href="#/">
-						future
+					<a target="_blank" class="dropdown-item" href="https://cfrichardson1.shinyapps.io/july_scheduler_demo/">
+						Interactive Schedule App
 					</a>
 
 				 </div>
@@ -321,7 +322,7 @@ Cali Lotto Data <br>Engineering & EDA</a>
 <div class="row">
 
   
-<div class="col-3">
+<div class="col-md-3">
 
 
 	<!-- Side Navbar -->
@@ -332,9 +333,8 @@ Cali Lotto Data <br>Engineering & EDA</a>
 			<!-- ABOUT -->
 				<li class="nav-item"><a class = 'nav-link active main_bullit' href="#about">About</a></li>
 				<!-- SUB -->
-				<li class="nav-item"><a class = 'nav-link sub_bullit' href="#header_contact">Contact Info</a></li>
-				<li class="nav-item"><a class = 'nav-link sub_bullit' href="#mission_statement">Mission Statement</a></li>
-				<li class="nav-item"><a class = 'nav-link sub_bullit' href="#career_themes">Career Themes</a></li>
+				<li class="nav-item"><a class = 'nav-link sub_bullit' href="#professional_background">Professional Background</a></li>
+				<li class="nav-item"><a class = 'nav-link sub_bullit' href="#personal_background">Personal Background</a></li>
 				<li class="nav-item"><a class = 'nav-link sub_bullit' href="#programs_and_tools">Languages and Tools</a></li>
 
 				<!-- EXPERIENCE  -->
@@ -353,53 +353,51 @@ Cali Lotto Data <br>Engineering & EDA</a>
 </div>
 
 
-<div id = 'main_content' class="col-9">
+<div id = 'main_content' class="col-md-9">
 
 	<!-- MAIN CONTENT  -->
   <!-- -------------------------------------------- -->
   <!-- **** ABOUT **** -->
   <!-- -------------------------------------------- -->
 
-  <p id = 'header_contact' class = 'info'>
+  <p id = 'about' class = 'info'>
     <center>	<h1><img width = '75x'src="/static/construction_hat.jpg"><u>Page is Under Construction</u><img width = '75px'src="/static/construction_hat.jpg"></h1>
      <p class = 'name'>CHRISTOPHER RICHARDSON</p>
-     <h4>(949) 529-0656 | ChrisRichardson@CFRichardson.info | <a href ='https://www.linkedin.com/in/cfrichardson/' style="color: rgb(88, 146, 239)">www.linkedin.com/in/cfrichardson</a></h4>
      <div class="col-4"><img style = 'border-radius: 50%;' src="/static/profile_img.jpg" class="img-fluid" width = '250px' alt = 'Profile Picture'>
      </center>
    </p>
 
-   <p id ='mission_statement' class = 'dummy'></p>
-	 <p class = 'strong'>Mission Statement</p>
-   <p class = 'content'>
-     Motivated, budding Software Engineer with a passion for technology looking to leverage academic and professional background in Data Science, academic marketing research, and IT experience. An insatiable learner ready to expand research beyond the academic domain, and further develop best research practices with a like-minded group to ensure that no stone is unturned toward an ideal outcome.
-   </p>
 
-   <p id ='career_themes' class = 'dummy'></p>
-	 <p class = 'strong'>Important career themes</p>
+   <p id ='professional_background' class = 'dummy'></p>
+	 <p class = 'strong'>Professional Background</p>
    <p class = 'content'>
-     <li class = 'bullets'>Working in a field that I am truly passionate about</li>
-     <li class = 'bullets'>Working for a company with products and services that I believe in</li>
-     <li class = 'bullets'>Working with people that I may learn from and grow with</li>
+		Associate Data Engineer with a passion for technology looking to leverage academic and professional background in Data Science, academic marketing research, and IT experience.  I have experience in cleaning and manipulating data sets through Python and R, diving into the data looking for trends through Exploratory Data Analysis using tools such as GGPlot, Seaborn, and Tableau. I love working with people with various backgrounds to get a well-rounded view on any subject at hand.  I have proven skills in customer service, marketing, teaching, and team management
    </p>
-
+	 <p id ='personal_background' class = 'dummy'></p>
+	 <p class = 'strong'>Personal Background</p>
+	 <p class = 'content'>
+		Currently, I am in route looking for a graduate program in the field of Data Science with a specialization in Human Dynamics or Health Informatics.  I am able to speak elementary level Korean and Tagalog.  I have traveled and lived in various places in Asia and North America.  I have a few other plans in the future to see more of the wonderful world we live in.
+	 </p>
    <p id = 'programs_and_tools' class = 'dummy'></p>
 
    <p class = 'strong'>Programming Languages and Tools</p>
 
    <i class="fab fa-python fa-4x"></i>
    <i class="fab fa-r-project fa-4x"></i>
+	 <i class="fas fa-database fa-4x"></i>
    <i class="fab fa-js-square fa-4x"></i>
    <i class="fab fa-html5 fa-4x"></i>
-   <i class="fas fa-database fa-4x"></i><br><br>
+   <br><br>
    <p class = 'content'>
-    <strong> Languages & Frameworks</strong>: Python | R | SQL | VBA | JavaScript | Flask | SciKit Learn | Seaborn | Shiny | Liquid <br>
-    <strong>Technologies:</strong> HTML5 | JSON | CSS | XML | MongoDB | GitHub<br>
-    <strong>Softwares:</strong> Tableau | MS Office Suite | RStudio | Jupyter Notebook | SPSS | MS Visio/Lucid Chart
+    <strong> Computer Languages </strong>: Python | R | SQL | VBA/GAscript | JavaScript<br>
+		<strong> Libraries </strong>: Pandas | Tidyverse | SciKit Learn | Shiny | Seaborn | Pymongo | SQLAlchemy<br>
+		<strong> Web Frameworks </strong>: Flask | Selenium | Bootstrap | Liquid<br>
+    <strong>Software:</strong> Tableau | Jira | MS Office Suite | RStudio | Jupyter Notebook | SPSS | MS Visio/Lucid Chart
   </p>
 
   <p id="experience" class = 'dummy'></p>
   <!-- -------------------------------------------- -->
-  <!-- **** ABOUT **** -->
+  <!-- **** RESUME **** -->
   <!-- -------------------------------------------- -->
 	<hr>
 
@@ -465,7 +463,7 @@ Cali Lotto Data <br>Engineering & EDA</a>
 	<p id = 'google' class = 'dummy'></p>
   <div class="row">
     <div class="col-md-1">
-      <img width = '110px' alt="Google" src="/static/Google.png">
+      <img width = '90px' alt="Google" src="/static/Google.png">
     </div>
     <div class="col-md-11">
       <!-- Job Description Header -->
@@ -490,7 +488,7 @@ Cali Lotto Data <br>Engineering & EDA</a>
 	<p id = 'ymca' class = 'dummy'></p>
   <div class="row">
     <div class="col-md-1">
-      <img width = '110px' alt="YMCA" src="/static/ymca.png">
+      <img width = '90px' alt="YMCA" src="/static/ymca.png">
     </div>
     <div class="col-md-11">
       <!-- Job Description Header -->
@@ -523,7 +521,7 @@ Cali Lotto Data <br>Engineering & EDA</a>
 
 
     <div class="row">
-      <div class="col">
+      <div class="col-4">
 
       </div>
 
@@ -532,13 +530,10 @@ Cali Lotto Data <br>Engineering & EDA</a>
           <p class="card-title">CONTACT INFO</p>
           <hr>
           <p class="card-text text-black">
-            <strong>Mobile: </strong>(949) 529-0656
-            <br>
-            <strong>Email: </strong>ChrisRichardson@cfrichardson.info
-            <br>
-              Chris's <a href="https://www.linkedin.com/in/cfrichardson">
-                <i class="fab fa-linkedin"></i>  LinkedIn Page
-              </a>
+            <strong>Mobile: </strong>(949) 529-0656<br>
+            <strong>Email: </strong>ChrisRichardson@CFRichardson.info<br>
+             <a href ='https://www.linkedin.com/in/cfrichardson/' style="color: rgb(88, 146, 239)"><i class="fab fa-linkedin">&nbsp&nbsp&nbsp LinkedIn</i></a></h4>
+
 
 
           </p>
@@ -563,10 +558,10 @@ Cali Lotto Data <br>Engineering & EDA</a>
 
 
 
-      &nbsp<img src="/static/bootstrap.png" width = '70px' alt = 'Bootstrap'>Bootstrap 4
-      &nbsp<img src="/static/flasks.png" width = '100px' alt = 'Flasks'>Flasks
-      &nbsp&nbsp&nbsp&nbsp&nbsp<img src="/static/python.svg" width = '130px'></font>
-      &nbsp<img src="/static/google_analytics.png" width = '140px'></p>
+      &nbsp<img src="/static/bootstrap.png" width = '50px' alt = 'Bootstrap'>Bootstrap 4
+      &nbsp<img src="/static/flasks.png" width = '90px' alt = 'Flasks'>Flasks
+      &nbsp&nbsp&nbsp&nbsp&nbsp<img src="/static/python.svg" width = '85px'></font>
+      &nbsp<img src="/static/google_analytics.png" width = '70px'></p>
       </div>
       <div class="col-3">
       </div>
