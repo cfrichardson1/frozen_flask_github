@@ -71,11 +71,12 @@
     padding-bottom: 0px;
   }
 
-  p.experience {
+  p.section_divider {
     font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 30px;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline overline;
     weight: bold;
-    /* text-align: center; */
   }
 
   p.strong {
@@ -113,9 +114,8 @@
     /* NAVBAR */
   /* ------------------------------------------------ */
 
-    a.nav-link {
+    p.nav-link {
       font-weight: bold;
-      color: white;
     }
 
     a.nav-color {
@@ -163,7 +163,7 @@
 
   #myScrollspy {
     padding-left: 5px;
-    top: 300px;
+    top: 100px;
     z-index: 9999 !important;
   }
 
