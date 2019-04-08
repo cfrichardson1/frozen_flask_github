@@ -114,6 +114,12 @@
     /* NAVBAR */
   /* ------------------------------------------------ */
 
+    a.nav-link {
+      font-weight: bold;
+      color: white;
+      font-size: 15px;
+    }
+
     p.nav-link {
       font-weight: bold;
     }

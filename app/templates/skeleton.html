@@ -1,35 +1,25 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-
-  <title>{{ title_bar }}</title>
-
-  {% include 'scripts&links.html' %}
-
-
-</head>
+{% include 'scripts&links.html' %}
 
 <!-- Body -->
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
 
-<!-- Navbar -->
-{% include 'navbar.html' %}
+  <!-- Navbar -->
+  {% include 'navbar.html' %}
 
-<div class="container-fluid">
+  <div class="container-fluid">
 
-<div class="container-fluid">
+    <div class="row">
 
-<div class="row">
+      {% block Content %}{% endblock %}
 
-  {% block Content %}{% endblock %}
+    </div>
 
-</div>
-{% include 'contact.html' %}
+    {% include 'contact.html' %}
 
-</body>
-
-</div>
+  </body>
 
 </div>
 

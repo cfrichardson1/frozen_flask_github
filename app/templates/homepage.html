@@ -1,13 +1,21 @@
 {% extends 'skeleton.html' %}
 
 {% block Content %}
+
 {% include 'homepage_sidebar.html' %}
 
-<div id = 'main_content' class="col-md-9">
+<div class="container">
 
-{% include 'about_me.html' %}
-{% include 'projects.html' %}
+  <div id = 'main_content' class="col-11">
 
-{% include 'experience.html' %}
+    <div class="container-fluid">
+
+      {% include 'about_me.html' %}
+      {% include 'projects.html' %}
+
+      {% include 'experience.html' %}
+    </div>
+  </div>
+
 </div>
-  {% endblock %}
+{% endblock %}
