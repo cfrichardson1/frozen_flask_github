@@ -50,6 +50,7 @@
 
   #main_content {
     padding-top: 50px;
+    padding-left: 100px;
   }
 
   p.card-text {
@@ -155,10 +156,7 @@
       text-align: center;
       text-decoration: underline overline;
     }
-/*
-    #right_dropdown {
-      left: 30px;
-    } */
+
 
     }
 
