@@ -62,7 +62,7 @@
 
   /* Dummy Sections for padding purposes as well as HTML targets */
   p.dummy {
-    height: 40px;
+    height: 30px;
   }
 
   p.job_title {
@@ -72,6 +72,7 @@
   }
 
   p.section_divider {
+    padding-top: 100px;
     font-family: "Arial Black", Gadget, sans-serif;
     font-size: 40px;
     text-align: center;
@@ -84,6 +85,14 @@
     font-weight: bold;
   }
 
+  p.project-type {
+    font-size: 26px;
+    font-family: fantasy;
+    text-align: center;
+    text-decoration: underline;
+
+
+  }
 
 
   h2 {
