@@ -209,10 +209,7 @@
 
 
 
-  @media screen and (max-width: 810px) {
-    #section1, #section2, #section3, #section41, #section42  {
-      margin-left: 150px;
-    }
+  @media screen and (max-width: 500px) {  {
   }
 
 
