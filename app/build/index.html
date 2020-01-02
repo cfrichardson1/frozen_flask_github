@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Homepage</title>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128761026-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128761026-1');
+</script>
+
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+<!-- Bootstrap CSS CDN -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<!-- Our Custom CSS -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  body {
+    position: relative;
+    font-size: 14px;
+    padding-bottom: 15px;
+  }
+
+  #builtwith {
+    font-size: 14px;
+    font-weight: bold;
+    align-items: center;
+    padding-left: 110px;
+    padding-top: 100px;
+    padding-bottom: 45px;
+  }
+
+
+  .col-6 {
+    padding-left: 20px;
+  }
+
+
+  .col-md-11 {
+    padding-left: 40px
+  }
+
+  hr {
+      border: none;
+      height: 1px;
+      background-color: #333; /* Modern Browsers */
+  }
+
+
+  .name {
+    font-size: 34px;
+    font-weight: bold;
+    font-family: "Arial Black", Gadget, sans-serif;
+
+  }
+
+  /* For Padding */
+  div.row {
+    padding-top: 18px;
+  }
+
+  li.job_bullets {
+    font-size: 15px;
+  }
+
+  #main_content {
+    padding-top: 50px;
+    padding-left: 100px;
+  }
+
+  p.card-text {
+    font-size: 15px;
+  }
+
+  p.content, li.bullets{
+    font-size: 13px;
+  }
+
+  /* Dummy Sections for padding purposes as well as HTML targets */
+  p.dummy {
+    height: 30px;
+  }
+
+  p.job_title {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 0px;
+  }
+
+  p.section_divider {
+    padding-top: 100px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline overline;
+    weight: bold;
+  }
+
+  p.strong {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  p.project-type {
+    font-size: 26px;
+    font-family: fantasy;
+    text-align: center;
+    text-decoration: underline;
+
+
+  }
+
+
+  h2 {
+    font-family: 'Impact', Charcoal, sans-serif;
+  }
+  h3 {
+    font-family: '"Trebuchet MS', Charcoal, sans-serif;
+  }
+
+  .subheading mb-3 {
+    padding-top: 0;
+  }
+
+  #contact_card {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+
+  .card-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+
+  /* ------------------------------------------------ */
+    /* NAVBAR */
+  /* ------------------------------------------------ */
+
+    a.nav-link {
+      font-weight: bold;
+      color: white;
+      font-size: 15px;
+    }
+
+    p.nav-link {
+      font-weight: bold;
+    }
+
+    a.nav-color {
+      font-weight: bold;
+    }
+
+
+    a.dropdown-item {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    a.dropdown-toggle {
+      color: white;
+      font-weight: bold;
+      font-size: 17px;
+      font-style: 'New Century Schoolbook', TeX Gyre Schola, serif;
+    }
+
+    #navbar {
+      font-size: 19px;
+      text-align: center;
+      text-decoration: underline overline;
+    }
+
+
+    }
+
+    #nav_buttons {
+      padding-right: 50px;
+    }
+
+
+  /* ------------------------------------------------ */
+  /* NAVBAR END */
+  /* ------------------------------------------------ */
+
+
+/* ------------------------------------------------ */
+  /* SIDEBAR */
+/* ------------------------------------------------ */
+
+  #myScrollspy {
+    padding-left: 5px;
+    top: 100px;
+    z-index: 9999 !important;
+  }
+
+  ul.nav-pills {
+    position: fixed;
+  }
+
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #2c2d2d;
+}
+
+  a.main_bullit {
+    font-weight: bold;
+    font-size: 17px;
+    color: black;
+  }
+
+  a.sub_bullit {
+    margin-left: 30px;
+    font-size: 12px;
+    color: black;
+
+  }
+
+/* ------------------------------------------------ */
+  /* SIDEBAR END */
+/* ------------------------------------------------ */
+
+
+
+  @media screen and (max-width: 500px) {  {
+  }
+
+
+
+
+  </style>
+
+<!-- Font Awesome JS -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+</head>
+
+<!-- Body -->
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg bg-dark">
+	<a class="navbar-brand" href="#"><strong><img src="/static/cfr_logo3.png" class="img-fluid" width = '50px' alt = 'logo'></strong></a>
+
+
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <img src="/static/menu.svg" width = '20px'>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul id = 'nav_buttons' class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/index.html">Home</a>
+      </li>
+			<!-- Personal Website Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Personal Sites
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a id = 'navbar' class="dropdown-item" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Background &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+
+					<a class="dropdown-item" href="https://www.linkedin.com/in/cfrichardson">
+						<i class="fab fa-linkedin"></i>  LinkedIn
+					</a>
+					<a class="dropdown-item" href="https://github.com/cfrichardson1">
+						<i class="fab fa-github"></i> Github Repo
+					</a>
+					<a id = 'navbar' class="dropdown-item" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Working Sites &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+						<a class="dropdown-item" href="https://www.zentuning.com">Zen Tuning</a>
+						<a class="dropdown-item" href="https://www.circuitsyndicate.com">Circuit Syndicate</a>
+
+		      </div>
+      </li>
+			<!-- END Personal Website Dropdown -->
+
+
+    </ul>
+		<!-- END Portfolio Dropdown -->
+
+
+  </div>
+</nav>
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      
+
+<div class="col-md-1 d-sm-none d-xl-block d-print-block">
+
+
+	<!-- Side Navbar -->
+
+
+	<nav id="myScrollspy" class="navbar d-none d-lg-block d-print-block">
+		<ul class="nav nav-pills flex-column">
+			<!-- ---------- ABOUT SIDEBAR ---------- -->
+				<li class="nav-item"><a class = 'nav-link active main_bullit' href="#about">About</a></li>
+				<!-- SUB -->
+				<li class="nav-item"><a class = 'nav-link sub_bullit' href="#professional_background">Professional Background</a></li>
+				<li class="nav-item"><a class = 'nav-link sub_bullit' href="#personal_background">Personal Background</a></li>
+				<li class="nav-item"><a class = 'nav-link sub_bullit' href="#programs_and_tools">Languages and Tools</a></li>
+
+				<!-- ---------- PROJECTS SIDEBAR ---------- -->
+				<li class="nav-item"><a class = 'nav-link main_bullit' href="#projects">Projects</a></li>
+
+
+				<!-- ---------- EXPERIENCE SIDEBAR ---------- -->
+				<li class="nav-item"><a class = 'nav-link main_bullit' href="#experience">Experience</a></li>
+				<!-- SUB -->
+				<li class="nav-item"><a class = 'nav-link sub_bullit' href="#zen_tuning">Zen Tuning</a></li>
+				<li class="nav-item"><a class = 'nav-link sub_bullit' href="#cruise_automation">Cruise Automation</a></li>
+				<li class="nav-item"><a class = 'nav-link sub_bullit' href="#google">Google</a></li>
+				<li class="nav-item"><a class = 'nav-link sub_bullit' href="#ymca">YMCA</a></li>
+	      <li class="nav-item"><a class = 'nav-link main_bullit' href="#contact_card">Contact Info</a></li>
+
+	    </ul>
+	  </nav>
+  <!-- END OF SIDEBAR  -->
+</div>
+
+<div class="container">
+
+  <div id = 'main_content' class="col-11">
+
+    <div class="container-fluid">
+
+      <!-- **** ABOUT **** -->
+<!-- -------------------------------------------- -->
+<p id ='professional_background' class = 'dummy'></p>
+
+<p id = 'about' class = 'info'>
+  <center>
+   <p class = 'name'>CHRISTOPHER RICHARDSON</p>
+   <div class="col-4"><img style = 'border-radius: 50%;' src="/static/profile_img.jpg" class="img-fluid" width = '250px' alt = 'Profile Picture'>
+   </center>
+ </p>
+
+
+ <p class = 'strong'>Professional Background</p>
+ <p class = 'content'>
+	Associate Data Engineer with a passion for technology looking to leverage academic and professional background in Data Science, academic marketing research, and IT experience.  Chris has experience in cleaning and manipulating big data through Python and R, diving into the data looking for trends through Exploratory Data Analysis using tools such as GGPlot, Seaborn, and Tableau. He loves working with people with various backgrounds to get a well-rounded view on any subject at hand.  He has proven skills in customer service, marketing, teaching, and team management
+ </p>
+ <p id ='personal_background' class = 'dummy'></p>
+ <p class = 'strong'>Personal Background</p>
+ <p class = 'content'>
+	Currently, Chris is in route looking for a graduate program in the field of Data Science with a specialization in Human Dynamics or Health Informatics. Chris have traveled and lived in various places in Asia and North America, thus is able to speak elementary Korean and Tagalog.
+ </p>
+ <p id = 'programs_and_tools' class = 'dummy'></p>
+
+ <p class = 'strong'>Programming Languages and Tools</p>
+
+ <i class="fab fa-python fa-4x"></i>
+ <i class="fab fa-r-project fa-4x"></i>
+ <i class="fas fa-database fa-4x"></i>
+ <i class="fab fa-js-square fa-4x"></i>
+ <i class="fab fa-html5 fa-4x"></i>
+ <i class="fab fa-confluence fa-4x"></i>
+ <i class='fab fa-jira fa-4x'></i>
+ <br><br>
+ <p class = 'content'>
+  <strong> Computer Languages </strong>: Python | R | SQL | VBA/GAscript | JavaScript<br>
+	<strong> Libraries </strong>: Pandas | Tidyverse | SciKit Learn | Shiny | Seaborn | Pymongo | SQLAlchemy<br>
+	<strong> Web Frameworks </strong>: Flask | Selenium | Bootstrap | Liquid<br>
+  <strong>Software:</strong> Tableau | Jira | MS Office Suite | RStudio | Jupyter Notebook | SPSS | MS Visio/Lucid Chart
+</p>
+      <!--  NOTE: TEST PILOT -->
+<p id="projects" class = 'dummy'></p>
+
+<p class = 'section_divider'>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspProjects&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+</p>
+
+<!-- PROJECT HEADERS  -->
+<div class = "row">
+  <div class ="col-6">
+    <p class = 'project-type'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Python Based &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+  </div>
+  <div class ="col-6">
+    <p class = 'project-type'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp R Based &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+  </div>
+</div>
+
+<div class="row">
+
+  <!--  PYTHON BASED PROJECT -->
+
+  <div class="col-3">
+    <a href="https://cfrichardson.info/Weather_EDA_webpage/">
+      <div class="card" >
+        <img class="card-img-top" src="/static/Weather_Flask.PNG" >
+        <div class="card-body">
+          <h5 class="card-title">Weather EDA</h5>
+          <p class="card-text">EDA that explores a ctiy's  explores a city's equator in relationship to variables such as temperature, cloudiness, humidity, and wind speed</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-3">
+    <a href="/PyCitySchools_EDA.html">
+
+      <div class="card">
+        <img class="card-img-top" src="/static/py_schools.PNG">
+        <div class="card-body">
+          <h5 class="card-title">School Comparison</h5>
+          <p class="card-text">Exploratory Data Analysis of a District's performance in two different types of schools: </p>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <!--  R BASED PROJECT -->
+  <div class="col-3">
+    <a href="https://cfrichardson1.shinyapps.io/july_scheduler_demo/">
+      <div class="card">
+        <img class="card-img-top" src="/static/Shiny.PNG">
+        <div class="card-body">
+          <h5 class="card-title">Shiny Schedule App</h5>
+          <p class="card-text">A scheduling application that allows users to view team schedules allowing for easy shift swaps.<p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-3">
+      <a href="http://cfrichardson.info/lotto_eda_Website/">
+
+        <div class="card">
+          <img class="card-img-top" src="/static/lotto_page.PNG">
+          <div class="card-body">
+            <h5 class="card-title">Lotto EDA</h5>
+            <p class="card-text">A quick lotto EDA that shows the process of cleaning and certain trends found by creating new variables based on given data by the state</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+      <p id="experience" class = 'dummy'></p>
+
+<p class = 'section_divider'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspExperience&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+<!-- ---------- -->
+<!-- Trilogy Education -->
+<!-- ---------- -->
+<p id ='trilogy_ed' class = 'dummy'></p>
+<div class="row">
+  <div class="col-md-1">
+    <a href = 'https://www.trilogyed.com/'>
+      <img width = '90px'  src="/static/trilogy.png" >
+    </div>
+    <div class="col-md-11">
+      <!-- Job Description Header -->
+      <p>
+        <font style = 'font-size: 25px; font-weight: bold;'>Trilogy Education Services</font><br>
+      </a>
+      <i>2019 till Present</i><br>
+      Senior Remote Tutor<br><font size = '3'>Remote</font></p>
+      <!-- END Job Description Header -->
+
+      <p>
+        <li class = 'job_bullets'>Online/Remote tutoring students from several University coding boot camps across the U.S. in Data Visualization
+           and Web Development skills covering advanced Excel & VBA, Python, NumPy, Pandas,  HTML/CSS, Bootstrap, React, Flask, Selenium, Matplotlib,
+            MySQL, MongoDB, JavaScript, D3.js, Tableau, Spark, Scikit-Learn & R</li>
+        <li class = 'job_bullets'> Schedule appointments with students to further develop a unique, custom-tailored, tutoring experience for each student throughout program durations</li>
+      </p>
+    </div>
+  </div>
+  <!-- -------- -->
+  <!-- END Trilogy Education -->
+  <!-- ---------- -->
+
+  <!-- ---------- -->
+  <!-- ZEN TUNING -->
+  <!-- ---------- -->
+  <p id ='zen_tuning' class = 'dummy'></p>
+  <div class="row">
+    <div class="col-md-1">
+      <a href = 'https://ZenTuning.com'>
+
+
+        <img href = 'https://ZenTuning.com' width = '90px' alt="Zen Tuning LLC" src="/static/zen_tuning.jpg" >
+      </div>
+      <div class="col-md-11">
+        <!-- Job Description Header -->
+        <p>
+          <font style = 'font-size: 25px; font-weight: bold;'>Zen Tuning</font><br>
+        </a>
+        <i>2018 till Present</i><br>
+        IT & Web Development<br><font size = '3'>Remote</font></p>
+        <!-- END Job Description Header -->
+        <!-- Job Description Header -<link rel="shortcut icon" href=".ico">-
+        <p><font style = 'font-size: 25px; font-weight: bold;'>Zen Tuning</font><br>
+      </a>
+      <i>2018 till Present</i><br>
+      Junior Robotics Engineer & Shopify Web Developer<br><font size = '3'>San Diego, CA</font></p>
+      <!-- END Job Description Header -->
+
+      <p>
+        <li class = 'job_bullets'>Design, documentation with Fritzing, assist in the build and assembly of Arduino based TIG weld bot using C++ and Python</li>
+        <li class = 'job_bullets'>Assist engineers in the design of high performance automotive parts</li>
+        <li class = 'job_bullets'>Design of User Interface through Liquid template language and CSS</li>
+        <li class = 'job_bullets'>Implementation of Search Engine Optimization through Google Analytics to achieve an increase in organic search conversions</li>
+      </p>
+    </div>
+  </div>
+  <!-- -------- -->
+  <!-- END ZEN TUNING -->
+  <!-- ---------- -->
+
+  <!-- ---------- -->
+  <!-- Cruise Automation -->
+  <!-- ---------- -->
+  <p id = 'cruise_automation' class = 'dummy'></p>
+  <div class="row">
+    <div class="col-md-1">
+      <a href = 'https://getcruise.com/'>
+      <img width = '110px' alt="Cruise Automation" src="/static/Cruise.png">
+    </div>
+    <div class="col-md-11">
+      <!-- Job Description Header -->
+      <p>
+        <font style = 'font-size: 25px; font-weight: bold;'>Cruise Automation through Aerotek</font><font style = 'font-size: 15px;'> (a General Motors Company)</font><br>
+        </a>
+        <i>2017 to 2018</i><br>
+        R&D Autonomous Vehicle Trainer<br><font size = '3'>San Francisco, CA</font></p>
+        <!-- END Job Description Header -->
+
+        <li class = 'job_bullets'>Increased testing efficiency by designing and creating various tools to help streamline testing</li>
+        <li class = 'job_bullets'>Analyzed, debugged, monitored, and datalogged vehicle’s technical difficulties while driving both autonomously and manually</li>
+        <li class = 'job_bullets'>Assisted with ensuring that training curriculum was up to date with industry safety standards</li>
+        <li class = 'job_bullets'>Trained Autonomous Vehicle Trainees on current software and autonomous vehicle operation</li>
+        <li  class = 'job_bullets'>Compiled detailed reports providing feedback based on vehicle behavior</li>
+      </p>
+
+    </div>
+  </div>
+  <!-- -------- -->
+  <!-- END CRUISE AUTOMATION -->
+  <!-- ---------- -->
+
+
+  <!-- ---------- -->
+  <!-- Google -->
+  <!-- ---------- -->
+  <p id = 'google' class = 'dummy'></p>
+  <div class="row">
+    <div class="col-md-1">
+      <a href = 'www.google.com'>
+      <img width = '90px' alt="Google" src="/static/Google.png">
+    </div>
+    <div class="col-md-11">
+      <!-- Job Description Header -->
+      <p>
+        <font style = 'font-size: 25px; font-weight: bold;'>Google through BC Forward</font><br>
+        </a>
+        <i>2016 to 2017</i><br>
+        Data integrity Specialist<br><font size = '3'>Mountain View, CA</font></p>
+        <!-- END Job Description Header -->
+        <li class = 'job_bullets'>Aided in adding processes to the content review process which enabled analysts to exceed required metrics, increasing efficiency by 20+ %</li>
+        <li class = 'job_bullets'>Developed an interactive work schedule web application using the Shiny library for R</li>
+        <li class = 'job_bullets'>Performed a wide variety of application policy reviews for the client's production line; including QA support, quick turnaround reviews, and critical thinking</li>
+        <li class = 'job_bullets'>Took action on non-compliant products to ensure optimal quality in order to protect Google's reputation</li>
+      </p>
+
+    </div>
+  </div>
+  <!-- -------- -->
+  <!-- END Google -->
+  <!-- ---------- -->
+
+
+  <!-- ---------- -->
+  <!-- YMCA -->
+  <!-- ---------- -->
+  <p id = 'ymca' class = 'dummy'></p>
+  <div class="row">
+    <div class="col-md-1">
+      <a href = 'https://www.ymca.org/'>
+      <img width = '90px' alt="YMCA" src="/static/ymca.png">
+    </div>
+    <div class="col-md-11">
+      <!-- Job Description Header -->
+      <p>
+        <font style = 'font-size: 25px; font-weight: bold;'>YMCA of San Diego</font><br>
+        </a>
+        <i>2015 to 2015</i><br>
+        Afterschool Mentor<br><font size = '3'>San Diego, CA</font></p>
+        <!-- END Job Description Header -->
+
+        <li class = 'job_bullets'>Mentored middle school students with homework in fields such as math, reading, and history</li>
+        <li class = 'job_bullets'>Generated interest in computer hardware, software, and other computer related technologies</li>
+        <li class = 'job_bullets'>Introduced students to basic programming languages, structures, and ideas through Code.Org  and the use of a Raspberry Pi 2</li>
+      </p>
+
+    </div>
+  </div>
+  <!-- -------- -->
+  <!-- END YMCA -->
+  <!-- ---------- -->
+      <p id="experience" class = 'dummy'></p>
+
+<p class = 'section_divider'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspExperience&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+<!-- ---------- -->
+<!-- C2K Education -->
+<!-- ---------- -->
+<p id ='C2k' class = 'dummy'></p>
+<div class="row">
+  <div class="col-md-1">
+    <a href = 'https://www.c2sdk.org/'>
+      <img width = '90px'  src="/static/C2kids.png" >
+    </div>
+    <div class="col-md-11">
+      <!-- Job Description Header -->
+      <p>
+        <font style = 'font-size: 25px; font-weight: bold;'>Computers 2 Kids</font><br>
+      </a>
+      <i>2019 till Present</i><br>
+      Refurbish Tech, Tech Mentor, & Volunteer Staff<br><font size = '3'>San Diego</font></p>
+      <!-- END Job Description Header -->
+
+      <p>
+        <li class = 'job_bullets'>Responsible for post processing, which includes reconfiguration of refurbished computer hardware, installation of partner anti-virus/spam/phishing software</li>
+        <li class = 'job_bullets'>Assist in the process of handing out low-cost laptops, desktops, and tablets to those without sufficient resources for a new device</li>
+      </p>
+    </div>
+  </div>
+  <!-- -------- -->
+  <!-- END Trilogy Education -->
+  <!-- ---------- -->
+
+    </div>
+
+  </div>
+
+</div>
+
+
+    </div>
+
+    
+
+
+
+<!-- Contact Section -->
+  <div class="container" id='contact_card'>
+
+
+    <div class="row">
+      <div class="col-4">
+
+      </div>
+
+
+      <div class="col-6">
+          <p id = 'contact_title' class="card-title">CONTACT INFO</p>
+          <hr>
+          <p class="card-text text-black">
+            <strong>Mobile: </strong>(949) 529-0656<br>
+            <strong>Email: </strong>ChrisRichardson@CFRichardson.info<br>
+             <a href ='https://www.linkedin.com/in/cfrichardson/' style="color: rgb(88, 146, 239)"><i class="fab fa-linkedin">&nbsp&nbsp&nbsp LinkedIn</i></a></h4>
+
+
+
+          </p>
+      </div>
+
+      <div class="col">
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class = 'container-fluid'>
+  <div class = 'row no-gutters'>
+
+      <div class="col-2">
+
+      </div>
+      <div class="col-1">
+      </div>
+      <div class="col-6">
+        <p id = 'builtwith'>
+
+
+
+      &nbsp<img src="/static/bootstrap.png" width = '50px' alt = 'Bootstrap'>Bootstrap 4
+      &nbsp<img src="/static/flasks.png" width = '90px' alt = 'Flasks'>Flasks
+      &nbsp&nbsp&nbsp&nbsp&nbsp<img src="/static/python.svg" width = '85px'></font>
+      &nbsp<img src="/static/google_analytics.png" width = '70px'></p>
+      </div>
+      <div class="col-3">
+      </div>
+  </div>
+</div>
+
+
+
+  </body>
+
+</div>
+
+<!-- Bootstrap JS -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</html>
