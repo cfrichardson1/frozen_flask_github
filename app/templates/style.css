@@ -63,7 +63,11 @@
     font-size: 13px;
   }
 
-  /* Dummy Sections for padding purposes as well as HTML targets */
+  /* Padding Sizes for blank Sections for padding purposes as well as HTML targets */
+  p.about_container {
+    padding-top:70px;
+    height: 30px;
+  }
   p.dummy {
     height: 30px;
   }
@@ -75,7 +79,7 @@
   }
 
   p.section_divider {
-    padding-top: 100px;
+    padding-top: 40px;
     font-family: "Arial Black", Gadget, sans-serif;
     font-size: 40px;
     text-align: center;
