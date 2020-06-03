@@ -3,3 +3,6 @@
 
 
 -Add "Back to Homepage" button for PySchool_Report based on Bootstrap 3.3.7
+
+https://www.circuitsyndicate.com/
+http://circuitsyndicate.com/
